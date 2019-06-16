@@ -39,8 +39,24 @@ print("--------------")
 print("THERE ARE " + str(products_count) + " PRODUCTS:")
 print("--------------")
 
+# {
+#     "id":1, 
+#     "name": "Chocolate Sandwich Cookies", 
+#     "department": "snacks", 
+#     "aisle": 
+#     "cookies cakes", 
+#     "price": 3.50
+# }
+
+
 for p in products:
     print(type(p))
+    # print(p["name"]) 
+
+    price_usd = p["price"] #"$4.99"
+
+    print("..." + p["name"] + " (" + str(price_usd) +")")
+
 
 
 
